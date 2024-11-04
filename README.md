@@ -1,4 +1,4 @@
-# GrassXD
+# Grass_Ext
 
 A useful program to help you earn grass points
 
