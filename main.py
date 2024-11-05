@@ -166,6 +166,8 @@ if __name__ == "__main__":
         import asyncio
 
         if os.name == "nt":
+            loop = asyncio.ProactorEventLoop()
+            asyncio.set_event_loop(loop=loop)            
             asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
         asyncio.run(main())
     except KeyboardInterrupt:
